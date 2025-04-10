@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCB</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: green;
+        }
+
+        ul li {
+            display: inline;
+            padding: 10px 10px;
+            color: white;
+            font-size: 30px;
+            position: relative;
+        }   
+
+        ul li:hover {
+            background-color: gray;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .id {
+            position: fixed;
+            right: 0;
+            display: inline-block;
+            padding: 10px 20px;
+    
+        }
+
+        /* Vertical Navigation Bar */
+        .vertical-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 100%;
+            background-color: green;
+            padding-top: 50px;
+            
+        }
+
+        .vertical-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .vertical-nav li {
+            padding: 12px 16px;
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            border-bottom: 1px solid #fff;
+        
+        }
+
+        .vertical-nav li a {
+            color: white;
+            text-decoration: none;
+    
+        }
+
+        .vertical-nav li:hover {
+            background-color: gray;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 10px;
+        }
+
+        .fixed, .relative {
+            border: 2px solid green;
+            text-align: center;
+        }
+
+        .fixed {
+            position: relative;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .imgrelative {
+            position: relative;
+        }
+
+        .imgrelative span {
+            position: absolute;
+            left: 20px;
+            padding: 3px 6px;
+            color: black;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .virat { top: 30px; }
+        .devdutt { top: 80px; }
+        .rajat { top: 130px; }
+        .salt { top: 180px; }
+        .jitesh { top: 230px; }
+        .swastik { top: 280px; }
+        .liam { top: 330px; }
+        .krunal { top: 380px; }
+        .swapnil { top: 430px; }
+        .tim { top: 480px; }
+        .romario { top: 530px; }
+        .manoj { top: 580px; }
+        .jacob { top: 630px; }
+
+        img {
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+        .imgrelative img {
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Vertical Navigation Bar -->
+    <div class="vertical-nav">
+        <ul>
+            <li><a href="https://www.facebook.com/">Home</a></li>
+            <li><a href="https://www.instagram.com/">About</a></li>
+            <li>Contact</li>
+            <li>Gallery</li>
+            <li>News</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <!-- Top Navigation Bar -->
+        <ul>
+            <li><a href="https://www.facebook.com/" target="_blank">Home</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">About</a></li>
+            <li>Contact</li>
+            <li>Gallery</li>
+            <li class="id">New</li>
+        </ul>
+
+        <!-- Titles -->
+        <div class="fixed">IPL Team</div>
+        <div class="relative">Members</div>
+
+        <!-- Image + Player Names -->
+        <div class="imgrelative">
+            <img src="rcb.jpg" height="670" width="650" >
+            <span class="virat"><img src="virat.jpg" width="30" height="30">Virat Kohli</span>
+            <span class="devdutt"><img src="devdutt.jpg" width="30" height="30">Devdutt Padikkal</span>
+            <span class="rajat"><img src="rajat.jpg" width="30" height="30">Rajat Patidar</span>
+            <span class="salt"><img src="Phil Salt.jpg" width="30" height="30">Phil Salt</span>
+            <span class="jitesh"><img src="Jitesh Sharma.jpg" width="30" height="30">Jitesh Sharma</span>
+            <span class="swastik"><img src="Swastik Chhikara.jpg" width="30" height="30">Swastik Chhikara</span>
+            <span class="liam"><img src="Liam Livingstone.jpg" width="30" height="30">Liam Livingstone</span>
+            <span class="krunal"><img src="Krunal Pandya.jpg" width="30" height="30">Krunal Pandya</span>
+            <span class="swapnil"><img src="Swapnil Singh.jpg" width="30" height="30">Swapnil Singh</span>
+            <span class="tim"><img src="Tim David.jpg" width="30" height="30">Tim David</span>
+            <span class="romario"><img src="Romario Shepherd.jpg" width="30" height="30">Romario Shepherd</span>
+            <span class="manoj"><img src="Manoj Bhandage.jpg" width="30" height="30">Manoj Bhandage</span>
+            <span class="jacob"><img src="Jacob Bethell.jpg" width="30" height="30">Jacob Bethell</span>
+        </div>
+    </div>
+</body>
+</html>
